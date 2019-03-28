@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Dart App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-card>
+  <div class="div">
+    <h1>Nico</h1>
+    <h1>{{startfive_1}}</h1>
+    <h1>Score</h1>
+    <ion-input type="number" placeholder="Score" [(ngModel)]="score_1"></ion-input>
+  </div>
+  
+    <div class="div">
+      <ion-button color="primary" (click)="calculateScore_1()">Confirm</ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <div class="div">
+      <h1>Simon</h1>
+      <h1>{{startfive_2}}</h1>
+      <h1>Score</h1>
+      <ion-input type="number" placeholder="Score" [(ngModel)]="score_2"></ion-input>
+    </div>
+    
+      <div class="div">
+        <ion-button color="primary" (click)="calculateScore_2()">Confirm</ion-button>
+      </div>
+    </ion-card>
+    <div class="div_1">
+      <ion-button color="primary" (click)="reset()">Reset</ion-button>
+    </div>
+</ion-content>
