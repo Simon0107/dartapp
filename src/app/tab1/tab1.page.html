@@ -7,6 +7,27 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-radio-group>
+
+      <ion-list-header>
+        <ion-label>Game Mode</ion-label>
+      </ion-list-header>
+      
+        <ion-item>
+          <ion-label>501</ion-label>
+          <ion-radio slot="start" value="501" checked (click)="setGamemode(501)"></ion-radio>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>301</ion-label>
+          <ion-radio slot="start" value="301" (click)="setGamemode(301)"></ion-radio>
+        </ion-item>
+
+    </ion-radio-group>
+  
+  </ion-card>
+
  <ion-card>
   <div class="div">
     <h1>Player 1</h1>

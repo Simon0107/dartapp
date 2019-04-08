@@ -17,12 +17,19 @@ export class Tab1Page {
     this.startfive_2 = 301;
   }
 
+  setGamemode(input: number) {
+    this.startfive_1 = input;
+    this.startfive_2 = input;
+  }
+
   calculateScore_1(): number {
     this.startfive_1 -= this. score_1;
+    this.score_1 = null;
     return this.startfive_1;
   }
   calculateScore_2(): number {
     this.startfive_2 -= this.score_2;
+    this.score_2 = null;
     return this.startfive_2;
   }
 
