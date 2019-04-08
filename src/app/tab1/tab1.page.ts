@@ -12,6 +12,7 @@ export class Tab1Page {
   score_2: number;
   startfive_1: number;
   startfive_2: number;
+
   constructor() {
     this.startfive_1 = 301;
     this.startfive_2 = 301;
