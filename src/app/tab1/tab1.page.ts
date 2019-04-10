@@ -12,6 +12,7 @@ export class Tab1Page {
   score_2: number;
   startfive_1: number;
   startfive_2: number;
+  gameMode: number;
 
   constructor() {
     this.startfive_1 = 301;
@@ -19,6 +20,7 @@ export class Tab1Page {
   }
 
   setGamemode(input: number) {
+    this.gameMode = input;
     this.startfive_1 = input;
     this.startfive_2 = input;
   }
@@ -35,8 +37,8 @@ export class Tab1Page {
   }
 
   reset() {
-    this.startfive_1 = 301;
-    this.startfive_2 = 301;
+    this.startfive_1 = this.gameMode;
+    this.startfive_2 = this.gameMode;
   }
 
 }
