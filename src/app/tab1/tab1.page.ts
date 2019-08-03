@@ -8,12 +8,25 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+
+  /**
+   * erzielter Score der beiden input felder
+   * TODO: Auslagerung als Service
+   */
   score_1: number;
   score_2: number;
+
+  /**
+   * Startwert
+   * TODO: Auslagerung als Service
+   */
   startfive_1: number;
   startfive_2: number;
 
   constructor() {
+    /**
+     * Startwert wird Standardmäßig bei Erzeugen der Seite auf 301 Gesetzt
+     */
     this.startfive_1 = 301;
     this.startfive_2 = 301;
   }
@@ -37,6 +50,10 @@ export class Tab1Page {
   reset() {
     this.startfive_1 = 301;
     this.startfive_2 = 301;
+  }
+
+  calculateAverage() {
+
   }
 
 }
