@@ -1,7 +1,0 @@
-{
-  "name": "dartapp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
